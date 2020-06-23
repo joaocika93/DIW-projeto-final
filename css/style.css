@@ -1,0 +1,62 @@
+body {
+   margin: 0; 
+}
+
+header .top-page {
+    background: darkred;
+    padding: 100px;
+    position: relative;
+
+}
+
+header .top-page img{
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .nav-menu ul{
+    padding-top: 1px;
+    list-style:none;
+}
+
+header .nav-menu ul li{ display: inline-block; }
+
+header .nav-menu ul li a{
+    padding: 5px 85px;
+    display: inline-block;
+
+    /* visual do link */
+    background-color: white;
+    color: darkred;
+    text-decoration: none;
+    border:thin solid darkred;
+    border-radius: 200px;
+
+}
+
+main .whoweare article{
+    width: 70%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .whoweare article h1{
+    margin: 30px;
+    width: 40%;
+    color: darkred;
+}
+
+main .whoweare article p{
+    margin: 30px;
+    width: 40%;
+    text-align: justify;
+    color: darkred;
+}
+
+main .whoweare article figure{
+}
