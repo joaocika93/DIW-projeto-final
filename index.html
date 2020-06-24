@@ -5,70 +5,214 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style type="text/css">
+    <style>
         @import url("css/style.css");
     </style>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
-<body>
+<body onload="openStep('backlog', 'backlog-button')">
     <!-- Cabeçalho retangular com logo centralizado 
     mais menu de navegação logo abaixo -->
     <header>
         <section class="top-page">
-            <img src="image/computer.jpg" alt="logo">
+            <img src="image/logo.png" alt="logo">
         </section>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#whoweare?">Quem Somos?</a></li>
-                <li><a href="#developmentsteps">Etapas de Desenvolvimento</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="#team">Equipe</a></li>
-                <li><a href="#clients">Clientes</a></li>
-                <li><a href="#form">Contato</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
+        <section class="nav-menu">
+            <nav>
+                <ul>
+                    <li><a href="#whoweare?">Quem Somos?</a></li>
+                    <li><a href="#developmentsteps">Etapas de Desenvolvimento</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                    <li><a href="#clients">Clientes</a></li>
+                    <li><a href="#form">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
         <!-- Seção Quem Somos? 
         Implementação com texto e Figuras -->
         <section id="whoweare?" class="whoweare">
-            <article>
-                <h1>Quem Somos?</h1>
-                <p>Somos a realização de um sonho, uma equipe dedicada a dar vida a imaginação ou a necessidade de tornar situações mais simples.
-                    Criamos soluções para qualquer que for seu desejo, usando as mais inovadoras tecnologias. Você imagina, a gente fabrica. 
-                </p>
-                <figure>Foto</figure>
-            </article>
+            <table>
+                <tr>
+                    <td>
+                        <article>
+                            <h2>Quem Somos?</h2>
+                            <p>Somos a realização de um sonho, uma equipe dedicada a dar vida a imaginação ou a
+                                necessidade de
+                                tornar situações mais simples.
+                                Criamos soluções para qualquer que for seu desejo, usando as mais inovadoras
+                                tecnologias. Você
+                                imagina, a gente fabrica.
+                            </p>
+                        </article>
+                    </td>
+                    <td>
+                        <table>
+                            <tr class="whoweare1">
+                                <td>
+                                    <img src="image/whour1.jpg" alt="whour1">
+                                </td>
+                            </tr>
+                            <tr class="whoweare2">
+                                <td>
+                                    <img src="image/whour2.jpg" alt="whour2">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
         </section>
         <!--  Seção Etepas de Desenvolvimento
         Implementação com java script -->
-        <section id="developmentsteps">
-            <p>Etapas de Desenvolvimento</p>
+        <section id="developmentsteps" class="developmentsteps">
+            <div>
+                <button id="backlog-button" class="tab-button"
+                    onclick="openStep('backlog', 'backlog-button')">Backlog</button>
+                <button id="development-button" class="tab-button"
+                    onclick="openStep('development', 'development-button')">Desenvolvimento</button>
+                <button id="QA-button" class="tab-button" onclick="openStep('QA', 'QA-button')">Testes</button>
+                <button id="delivery-button" class="tab-button"
+                    onclick="openStep('delivery', 'delivery-button')">Entrega</button>
+            </div>
+            <div id="backlog" class="step">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Backlog</h2>
+                            <p>Etapa da análise dos requistos, onde nossos profisionais iram conversar
+                                com o cliente para preparar a melhor solução possível de desenvolvimento.
+                            </p>
+                        </td>
+                        <td>
+                            <img src="image/backlog.png" alt="backlog">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="development" class="step">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Desenvolvimento</h2>
+                            <p>Etapa de criação do produto, onde nosso melhores desenvolvedores utilizando
+                                as ferramentas mais atuais criam a solução ideial para o produto pensado.</p>
+                        </td>
+                        <td>
+                            <img src="image/development.png" alt="development">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="QA" class="step">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Testes</h2>
+                            <p>Etapa onde são feitos todos os tipo de testes afim do produto estar livre de problemas,
+                                estando pronto para ser distribuido ao cliente.
+                            </p>
+                        </td>
+                        <td>
+                            <img src="image/test.png" alt="QA">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="delivery" class="step">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Entrega</h2>
+                            <p>Produto finalizado e testado podendo ser implementado em sua versão final para os
+                                usuarios em questão.</p>
+                        </td>
+                        <td>
+                            <img src="image/delivery.png" alt="delivery">
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </section>
         <!-- Seção Serviços
         implementação com Tabelas -->
-        <section id="services">
-            <p>Serviços</p>
+        <section id="services" class="services">
+            <table>
+                <tr>
+                    <td>
+                        <table class="services-table-one">
+                            <tr>
+                                <td>
+                                    <h2>Serviços</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="services-table-two">
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table class="services-table-three">
+                            <tr>
+                                <td>
+                                    <img src="image/html.png" alt="html">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
         </section>
         <!-- Seção Equipe
         implementação com tabelas -->
-        <section id="team">
+        <!-- <section id="team">
             <p>Equipe</p>
-        </section>
+        </section> -->
         <!-- Seção Clientes
         implementação com texto e figura -->
-        <section id="clients">
+        <!-- <section id="clients">
             <p>Clientes</p>
-        </section>
+        </section> -->
         <!-- Seção Formulario
         impleentação com form e tabela -->
-        <section id="form">
+        <!-- <section id="form">
             <p>Formulario</p>
-        </section>
+        </section> -->
     </main>
     <footer>
         <!-- Rodapé com uma lista de contatos -->
-        <p>Contatos</p>
+        <!-- <p>Contatos</p> -->
     </footer>
 </body>
 

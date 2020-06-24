@@ -10,34 +10,41 @@ header .top-page {
 }
 
 header .top-page img{
-    width: 100px;
+    width: 200px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+main .nav-menu{
+    position: center;
+}
 
-header .nav-menu ul{
-    padding-top: 1px;
+main .nav-menu nav ul{ 
+    padding:5px;
+    margin:0px;
+    background-color:#EDEDED;
     list-style:none;
 }
 
-header .nav-menu ul li{ display: inline-block; }
+main .nav-menu nav li{
+    position:relative; 
+    float:left; 
+    
+}
 
-header .nav-menu ul li a{
-    padding: 5px 85px;
+main .nav-menu nav li a{
+    padding: 10px 115px;
     display: inline-block;
 
     /* visual do link */
-    background-color: white;
     color: darkred;
     text-decoration: none;
-    border:thin solid darkred;
-    border-radius: 200px;
-
+    border:2px solid darkred;
+    border-radius: 20px;
 }
 
-main .whoweare article{
+main .whoweare table{
     width: 70%;
     position: absolute;
     top: 60%;
@@ -45,18 +52,125 @@ main .whoweare article{
     transform: translate(-50%, -50%);
 }
 
-main .whoweare article h1{
+main .whoweare table article h2{
     margin: 30px;
+    margin-left: 15%;
     width: 40%;
     color: darkred;
+    font-size: xx-large;
 }
 
-main .whoweare article p{
+main .whoweare table article p{
     margin: 30px;
     width: 40%;
     text-align: justify;
     color: darkred;
+    font-size: x-large;
 }
 
-main .whoweare article figure{
+tr .whoweare1 td img {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    margin-left: 50%;
 }
+
+tr .whoweare2 td img {
+    vertical-align: middle;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    margin-left: 75%;
+}
+
+main .developmentsteps{
+    width: 70%;
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+main .developmentsteps button{
+    padding: 10px;
+    width: 23%;
+    outline: none;
+}
+
+main .developmentsteps table{
+    width: 100%;
+}
+
+main .developmentsteps table tr td{
+    color: darkred;
+    width: 20px;
+    font-size: large;
+}
+
+main .developmentsteps table tr td img{
+    width: 200px;
+    margin-left: 70%;
+}
+
+.step{
+    display: none;
+}
+
+.tab-button{
+    text-decoration: none;
+    border:2px solid darkred;
+    border-radius: 20px;
+    background-color: white;
+    color: darkred;
+
+}
+
+main .services{
+    width: 70%;
+    position: absolute;
+    top: 185%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.services-table-one{
+    width: 380px;
+    height: 800px;
+    background-color: darkred;
+    color: white;
+    text-align: center;
+}
+
+.services-table-two{
+    width: 350px;
+    height: 800px;
+    margin-left: 30%;
+    border-spacing: 0 50px;
+}
+
+.services-table-two tr td{
+    border: 1px solid darkred;
+}
+
+.services-table-three{
+    width: 350px;
+    height: 800px;
+    margin-left: 45%;
+    border-spacing: 0 50px;
+}
+
+.services-table-three tr td{
+    border: 1px solid darkred;
+    text-align: center;
+}
+
+.services-table-three tr td img{
+    width: 100px;
+}
+
+
