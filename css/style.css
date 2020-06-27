@@ -2,13 +2,14 @@ body {
     margin: 0;
 }
 
-header .top-page {
+.top-page {
     background: darkred;
     padding: 100px;
     position: relative;
+
 }
 
-header .top-page img {
+.top-page img {
     width: 200px;
     position: absolute;
     top: 50%;
@@ -17,23 +18,30 @@ header .top-page img {
 }
 
 main{
-    width: 1920px;
+    width: 1903px;
     height: 3500px;
 }
 
-main .nav-menu{
+.vertical-direction{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    height: 100%;
+}
+
+.nav-menu{
     width: 100%;
     height: 50px;
 }
 
-main .nav-menu nav ul {
+.nav-menu nav ul {
     list-style: none;
     width: 1800px;
     height: 50px;
     margin-top: 4px;
 }
 
-main .nav-menu nav li {
+.nav-menu nav li {
     position: relative;
     float: left;
     width: 350px;
@@ -44,7 +52,7 @@ main .nav-menu nav li {
     text-align: center;
 }
 
-main .nav-menu nav li a {
+.nav-menu nav li a {
     display: inline-block;
     /* visual do link */
     color: darkred;
@@ -53,73 +61,64 @@ main .nav-menu nav li a {
     
 }
 
-main .whoweare table {
-    width: 70%;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.whoweare table {
+    width: 100%;
+    height: 500px;
+    padding-left: 95px;
+    margin-top: 20px;
 }
 
-main .whoweare table article h2 {
-    margin: 30px;
-    margin-left: 15%;
-    width: 40%;
+.whoweare table tr td{
+    width: 50%;
+}
+
+.whoweare table article h2 {
     color: darkred;
     font-size: xx-large;
 }
 
-main .whoweare table article p {
-    margin: 30px;
-    width: 40%;
+.whoweare table article p {
     text-align: justify;
     color: darkred;
     font-size: x-large;
 }
 
-tr .whoweare1 td img {
-    vertical-align: middle;
+.whoweare1 td img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin-left: 50%;
 }
 
-tr .whoweare2 td img {
-    vertical-align: middle;
+.whoweare2 td img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    margin-left: 75%;
+    margin-left: 30%;
 }
 
-main .developmentsteps {
-    width: 70%;
-    position: absolute;
-    top: 115%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.developmentsteps {
+    margin-top: 100px;
 }
 
-main .developmentsteps button {
+.developmentsteps button {
     padding: 10px;
-    width: 23%;
+    width: 330px;
     outline: none;
 }
 
-main .developmentsteps table {
+.developmentsteps table {
     width: 100%;
 }
 
-main .developmentsteps table tr td {
+.developmentsteps table tr td {
     color: darkred;
     width: 20px;
     font-size: large;
 }
 
-main .developmentsteps table tr td img {
+.developmentsteps table tr td img {
     width: 200px;
-    margin-left: 70%;
+    margin-left: 80%;
 }
 
 .step {
