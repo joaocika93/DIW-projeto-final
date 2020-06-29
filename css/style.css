@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-style: italic;
 }
 
 .top-page {
@@ -19,7 +20,8 @@ body {
 
 main{
     width: 1903px;
-    height: 3500px;
+    height: 3050px;
+    position: absolute;
 }
 
 .vertical-direction{
@@ -131,19 +133,24 @@ main{
     border-radius: 20px;
     background-color: white;
     color: darkred;
+    font-style: italic;
 }
 
-main .services {
-    width: 70%;
-    position: absolute;
-    top: 185%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.services {
+    margin-top: 100px;
+    height: 750px;
+    text-align: center;
 }
 
-.services-table-one {
-    width: 380px;
-    height: 800px;
+.services td{
+    padding: 40px;
+}
+
+.services-table-one table{
+    border-spacing: 0px;
+}
+
+.services-table-one tr td {
     background-color: darkred;
     color: white;
     text-align: center;
@@ -151,73 +158,39 @@ main .services {
 
 .services-table-one tr td p {
     text-align: left;
-    width: 200px;
-    margin-left: 25%;
     font-size: x-large;
-}
-
-.services-table-two {
-    width: 350px;
-    height: 800px;
-    margin-left: 30%;
-    border-spacing: 0 50px;
-}
-
-.services-table-two tr td {
-    border: 1px solid darkred;
-    text-align: center;
 }
 
 .services-table-two tr td p {
     text-align: left;
     font-size: medium;
     color: darkred;
-    width: 300px;
-    margin-left: 30px;
 }
 
 .services-table-two tr td img {
-    width: 70px;
-}
-
-.services-table-three {
-    width: 350px;
-    height: 800px;
-    margin-left: 45%;
-    border-spacing: 0 50px;
-}
-
-.services-table-three tr td {
-    border: 1px solid darkred;
-    text-align: center;
+    width: 80px;
 }
 
 .services-table-three tr td p {
     text-align: left;
     font-size: medium;
     color: darkred;
-    width: 300px;
-    margin-left: 30px;
 }
 
 .services-table-three tr td img {
-    width: 120px;
+    width:100px;
 }
 
-main .team {
-    width: 60%;
-    height: 800px;
-    position: absolute;
-    top: 290%;
-    left: 48%;
-    transform: translate(-50%, -50%);
+.team {
     background-color: darkred;
     color: white;
+    margin-top: 100px;
+    height: 600px;
 }
 
-main .team table {
+.team table {
     width: 100%;
-    height: 100%;
+    height: 600px;
 }
 
 .team-icon td {
@@ -232,23 +205,19 @@ main .team table {
     text-align: center;
 }
 
-main .formulary {
-    width: 70%;
-    position: absolute;
-    top: 390%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.formulary {
     color: darkred;
 }
 
-main .formulary table tr td form {
-    margin-left: 75%;
+.formulary table tr td form {
+    margin-top: 200px;
+    margin-left: 500px;
     width: 500px;
     height: 600px;
     border: 1px solid darkred;
-    background-color: white;
     text-align: center;
     font-size: large;
+    background-color: white;
 }
 
 .formulary-input div input {
@@ -257,6 +226,8 @@ main .formulary table tr td form {
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 20px;
+    outline: none;
+    border: 1px solid darkred;
 }
 
 .formulary-input-textbox {
@@ -282,19 +253,23 @@ main .formulary table tr td form {
     width: 500px;
 }
 
+footer{
+    margin-top: 3100px;
+    width: 100%;
+    background-color: darkred;
+}
+
 footer .contacts {
-    background: darkred;
-    height: 400px;
-    margin-top: 180%;
     color: white;
     font-size: x-large;
 }
 
-footer .contacts div {
+.contacts div {
     padding-top: 20px;
     margin-left: 200px;
 }
 
-footer .contacts div table tr td img {
-    width: 100px;
+.contacts div table tr td img {
+    width: 50px;
+    margin-bottom: 50px;
 }
