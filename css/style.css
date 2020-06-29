@@ -162,7 +162,7 @@ main{
 }
 
 .services-table-two tr td p {
-    text-align: left;
+    text-align: justify;
     font-size: medium;
     color: darkred;
 }
@@ -172,7 +172,7 @@ main{
 }
 
 .services-table-three tr td p {
-    text-align: left;
+    text-align: justify;
     font-size: medium;
     color: darkred;
 }
@@ -184,7 +184,7 @@ main{
 .team {
     background-color: darkred;
     color: white;
-    margin-top: 100px;
+    margin-top: 180px;
     height: 600px;
 }
 
@@ -254,7 +254,7 @@ main{
 }
 
 footer{
-    margin-top: 3100px;
+    margin-top: 3150px;
     width: 100%;
     background-color: darkred;
 }
