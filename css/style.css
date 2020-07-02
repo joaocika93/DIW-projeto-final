@@ -3,6 +3,8 @@ body {
     font-style: italic;
 }
 
+/* header */
+
 .top-page {
     background: darkred;
     padding: 100px;
@@ -18,11 +20,17 @@ body {
     transform: translate(-50%, -50%);
 }
 
+
+/* Tamanho da Seção principal */
+
 main{
     width: 1903px;
     height: 3050px;
     position: absolute;
 }
+
+/* posição do corpo principal da pagina que servirá de pai para as seções */
+
 
 .vertical-direction{
     padding-left: 15%;
@@ -30,6 +38,8 @@ main{
     padding-top: 2%;
     height: 100%;
 }
+
+ /* Menu de navegação */
 
 .nav-menu{
     width: 100%;
@@ -62,6 +72,8 @@ main{
     margin-top: 16px;
     
 }
+
+ /* Seção Quem Somos? */
 
 .whoweare table {
     width: 100%;
@@ -98,8 +110,16 @@ main{
     margin-left: 30%;
 }
 
+/* Etapas de Desenvolvimento */
+
 .developmentsteps {
-    margin-top: 100px;
+    margin-top: 150px;
+}
+
+.developmentsteps h1{
+    color: darkred;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .developmentsteps button {
@@ -136,8 +156,10 @@ main{
     font-style: italic;
 }
 
+/* Seção Serviços */
+
 .services {
-    margin-top: 100px;
+    margin-top: 150px;
     height: 750px;
     text-align: center;
 }
@@ -181,10 +203,12 @@ main{
     width:100px;
 }
 
+/* Seção Equipe */
+
 .team {
     background-color: darkred;
     color: white;
-    margin-top: 180px;
+    margin-top: 250px;
     height: 600px;
 }
 
@@ -205,12 +229,15 @@ main{
     text-align: center;
 }
 
+/* Seção Formulario */
+
 .formulary {
     color: darkred;
 }
 
+
 .formulary table tr td form {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 500px;
     width: 500px;
     height: 600px;
@@ -253,8 +280,10 @@ main{
     width: 500px;
 }
 
+/* Rodapé */
+
 footer{
-    margin-top: 3150px;
+    margin-top: 3400px;
     width: 100%;
     background-color: darkred;
 }
