@@ -14,56 +14,35 @@
 <body onload="openStep('backlog', 'backlog-button')">
     <!-- Cabeçalho retangular com logo centralizado 
     mais menu de navegação logo abaixo -->
-    <header>
-        <section class="top-page">
-            <img src="image/logo.png" alt="logo">
-        </section>
+    <header class="top-page">
+        <img src="image/logo.png" alt="logo">
     </header>
     <main>
-        <section class="nav-menu">
-            <nav>
-                <ul>
-                    <li><a href="#whoweare?">Quem Somos?</a></li>
-                    <li><a href="#developmentsteps">Etapas de Desenvolvimento</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#team">Equipe</a></li>
-                    <li><a href="#form">Contato</a></li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#whoweare?">Quem Somos?</a></li>
+                <li><a href="#developmentsteps">Etapas de Desenvolvimento</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#team">Equipe</a></li>
+                <li><a href="#form">Contato</a></li>
+            </ul>
+        </nav>
         <div class="vertical-direction">
             <!-- Seção Quem Somos? 
         Implementação com texto e Figuras -->
             <section id="whoweare?" class="whoweare">
-                <table>
-                    <tr>
-                        <td>
-                            <article>
-                                <h2>Quem Somos?</h2>
-                                <p>Somos a realização de um sonho, uma equipe dedicada a dar vida a imaginação ou a
-                                    necessidade de tornar situações mais simples. Criamos soluções para qualquer que for
-                                    seu desejo, usando as mais inovadoras tecnologias. Você imagina,
-                                    a gente fabrica.
-                                </p>
-                            </article>
-                        </td>
-                        <td>
-                            <table>
-                                <tr class="whoweare1">
-                                    <td>
-                                        <img src="image/whour1.jpg" alt="whour1">
-                                    </td>
-                                </tr>
-                                <tr class="whoweare2">
-                                    <td>
-                                        <img src="image/whour2.jpg" alt="whour2">
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-
+                <article>
+                    <h2>Quem Somos?</h2>
+                    <p>Somos a realização de um sonho, uma equipe dedicada a dar vida a imaginação ou a
+                        necessidade de tornar situações mais simples. Criamos soluções para qualquer que for
+                        seu desejo, usando as mais inovadoras tecnologias. Você imagina,
+                        a gente fabrica.
+                    </p>
+                </article>
+                <figure class="whoweare-figure">
+                    <img class="figure-1" src="image/whour1.jpg" alt="whour1">
+                    <img class="figure-2" src="image/whour2.jpg" alt="whour2">
+                </figure>
             </section>
             <!--  Seção Etepas de Desenvolvimento
         Implementação com java script -->
@@ -79,221 +58,181 @@
                         onclick="openStep('delivery', 'delivery-button')">Entrega</button>
                 </div>
                 <div id="backlog" class="step">
-                    <table>
-                        <tr>
-                            <td>
-                                <h2>Backlog</h2>
-                                <p>Etapa da análise dos requistos, onde nossos profisionais iram conversar com o cliente
-                                    para preparar a melhor solução possível de desenvolvimento.
-                                </p>
-                            </td>
-                            <td>
-                                <img src="image/backlog.png" alt="backlog">
-                            </td>
-                        </tr>
-                    </table>
+                    <div>
+                        <article>
+                            <h2>Backlog</h2>
+                            <p>Etapa da análise dos requistos, onde nossos profisionais iram conversar com o cliente
+                                para preparar a melhor solução possível de desenvolvimento.
+                            </p>
+                        </article>
+                        <figure>
+                            <img src="image/backlog.png" alt="backlog">
+                        </figure>
+                    </div>
                 </div>
                 <div id="development" class="step">
-                    <table>
-                        <tr>
-                            <td>
-                                <h2>Desenvolvimento</h2>
-                                <p>Etapa de criação do produto, onde nosso melhores desenvolvedores utilizando as
-                                    ferramentas mais atuais criam a solução ideial para o produto pensado.</p>
-                            </td>
-                            <td>
-                                <img src="image/development.png" alt="development">
-                            </td>
-                        </tr>
-                    </table>
+                    <div>
+                        <article>
+                            <h2>Desenvolvimento</h2>
+                            <p>Etapa de criação do produto, onde nosso melhores desenvolvedores utilizando as
+                                ferramentas mais atuais criam a solução ideial para o produto pensado.</p>
+                        </article>
+                        <figure>
+                            <img src="image/development.png" alt="development">
+                        </figure>
+                    </div>
                 </div>
                 <div id="QA" class="step">
-                    <table>
-                        <tr>
-                            <td>
-                                <h2>Testes</h2>
-                                <p>Etapa onde são feitos todos os tipo de testes afim do produto estar livre de
-                                    problemas, estando pronto para ser distribuido ao cliente.
-                                </p>
-                            </td>
-                            <td>
-                                <img src="image/test.png" alt="QA">
-                            </td>
-                        </tr>
-                    </table>
+                    <div>
+                        <article>
+                            <h2>Testes</h2>
+                            <p>Etapa onde são feitos todos os tipo de testes afim do produto estar livre de
+                                problemas, estando pronto para ser distribuido ao cliente.
+                            </p>
+                        </article>
+                        <figure>
+                            <img src="image/test.png" alt="QA">
+                        </figure>
+                    </div>
                 </div>
                 <div id="delivery" class="step">
-                    <table>
-                        <tr>
-                            <td>
-                                <h2>Entrega</h2>
-                                <p>Produto finalizado e testado podendo ser implementado em sua versão final para os
-                                    usuarios em questão.</p>
-                            </td>
-                            <td>
-                                <img src="image/delivery.png" alt="delivery">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                    <div>
+                        <article>
+                            <h2>Entrega</h2>
+                            <p>Produto finalizado e testado podendo ser implementado em sua versão final para os
+                                usuarios em questão.</p>
+                        </article>
+                        <figure>
+                            <img src="image/delivery.png" alt="delivery">
+                        </figure>
+
+                    </div>
             </section>
             <!-- Seção Serviços
         implementação com Tabelas -->
             <section id="services" class="services">
-                <table>
-                    <tr>
-                        <td class="services-table-one">
-                            <table >
-                                <tr>
-                                    <td>
-                                        <h2>Serviços</h2>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Bulbasaur Lorem ipsum dolor sit amet, Squirtle consectetur adipiscing elit.
-                                            Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venusaur
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor; hodor HODOR hodor, hodor
-                                            hodor?! Hodor! Hodor hodor, hodor – hodor, hodor. Hodor hodor?! </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td class="services-table-two">
-                            <table >
-                                <tr>
-                                    <td>
-                                        <p>Quinta versão da linguagem HTML. Esta nova versão traz consigo importantes mudanças quanto ao papel do HTML no mundo da Web, através de novas funcionalidades como semântica e acessibilidade.</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><img src="image/css.png" alt="css"></td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>JavaScript (frequentemente abreviado como JS) é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional)</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td class="services-table-three">
-                            <table >
-                                <tr>
-                                    <td>
-                                        <img src="image/html.png" alt="html">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p>CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets (ou simplesmente CSS), pela qual se define estilos para um projeto web (página de internet).</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="image/js.jpg" alt="js">
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
+                <!-- ELIMINAR LOREM IPSUN E TABELAS -->
+                <div class="services-left">
+                    <article>
+                        <h2>Serviços</h2>
+                        <p>Análise de sistemas é a atividade que tem como finalidade a realização de estudos de
+                            processos a fim de encontrar o melhor caminho racional para que a informação possa ser
+                            processada. </p>
+                    </article>
+                    <article>
+                        <p>Os profissionais da área geram softwares (programas), que são executados em hardwares
+                            (equipamentos) operados por usuários (indivíduos), preparados e treinados em procedimentos
+                            operacionais padronizados, dotados de conhecimentos do software e hardware para seu
+                            trabalho. </p>
+                    </article>
+                </div>
+                <div class="services-center">
+                    <article>
+                        <p>Quinta versão da linguagem HTML. Esta nova versão traz consigo importantes
+                            mudanças quanto ao papel do HTML no mundo da Web, através de novas
+                            funcionalidades como semântica e acessibilidade.</p>
+                    </article>
+                    <figure><img src="./image/css.png" alt="css"></figure>
+                    <article>
+                        <p>JavaScript (frequentemente abreviado como JS) é uma linguagem de programação
+                            interpretada estruturada, de script em alto nível com tipagem dinâmica fraca
+                            e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional)
+                        </p>
+                    </article>
+                </div>
+                <div class="services-right">
+                    <figure><img src="./image/html.png" alt="html"></figure>
+                    <article>
+                        <p>CSS3 é a terceira mais nova versão das famosas Cascading Style Sheets (ou
+                            simplesmente CSS), pela qual se define estilos para um projeto web (página
+                            de internet).</p>
+                    </article>
+                    <figure><img class="services-js" src="./image/js.jpg" alt="javascript"></figure>
+                </div>
+
             </section>
             <!-- Seção Equipe
         implementação com tabelas -->
             <section id="team" class="team">
-                <table>
-                    <tr class="team-title">
-                        <td>
-                        </td>
-                        <td>
-                            <h2>Equipe</h2>
-                        </td>
-                        <td>
-                        </td>
-                    </tr>
-                    <tr class="team-icon">
-                        <td>
-                            <img src="image/icons/avatar1.png" alt="Gerente">
-                            <h4>Gerente</h4>
-                            <p>Gerente de desenvolvimento</p>
-                        </td>
-                        <td>
-                            <img src="image/icons/avatar2.png" alt="P.O">
-                            <h4>Product Owner</h4>
-                            <p>Responsavel pelo levantamento dos requisitos</p>
-                        </td>
-                        <td>
-                            <img src="image/icons/avatar3.png" alt="ScrumMaster">
-                            <h4>Scrum Master</h4>
-                            <p>Lider da equipe de desenvolvedores</p>
-                        </td>
-                    </tr>
-                    <tr class="team-icon">
-                        <td>
-                            <img src="image/icons/avatar4.png" alt="Desenvolvedor">
-                            <h4>Desenvolvedor</h4>
-                            <p>Responsavel pelo desenvolvimento do código do produto</p>
-                        </td>
-                        <td>
-                            <img src="image/icons/avatar5.png" alt="Q.A">
-                            <h4>Quality Assurance</h4>
-                            <p>Responsavel pelos testes de qualidade do produto</p>
-                        </td>
-                        <td>
-                            <img src="image/icons/avatar6.png" alt="Estagiario">
-                            <h4>Estagiário</h4>
-                            <p>Treeine nas areas de desenvolvimento e Quality Assurance</p>
-                        </td>
-                    </tr>
-                </table>
+                <div class="team-title">
+                    <h2>Equipe</h2>
+                </div>
+                <div class="team-top">
+                    <article>
+                        <img src="image/icons/avatar1.png" alt="Gerente">
+                        <h4>Gerente</h4>
+                        <p>Gerente de desenvolvimento</p>
+                    </article>
+                    <article>
+                        <img src="image/icons/avatar2.png" alt="P.O">
+                        <h4>Product Owner</h4>
+                        <p>Responsavel pelo levantamento dos requisitos</p>
+                    </article>
+                    <article>
+                        <img src="image/icons/avatar3.png" alt="ScrumMaster">
+                        <h4>Scrum Master</h4>
+                        <p>Lider da equipe de desenvolvedores</p>
+                    </article>
+                </div>
+                <div class="team-bottom">
+                    <article>
+                        <img src="image/icons/avatar4.png" alt="Desenvolvedor">
+                        <h4>Desenvolvedor</h4>
+                        <p>Responsavel pelo desenvolvimento do código do produto</p>
+                    </article>
+                    <article>
+                        <img src="image/icons/avatar5.png" alt="Q.A">
+                        <h4>Quality Assurance</h4>
+                        <p>Responsavel pelos testes de qualidade do produto</p>
+                    </article>
+                    <article>
+                        <img src="image/icons/avatar6.png" alt="Estagiario">
+                        <h4>Estagiário</h4>
+                        <p>Treeine nas areas de desenvolvimento e Quality Assurance</p>
+                    </article>
+                </div>
             </section>
             <!-- Seção Formulario
         impleentação com form e tabela -->
             <section id="form" class="formulary">
-                <table>
-                    <tr>
-                        <td class="formulary-title">
-                            <h2>Contatos</h2>
-                            <p>Entre em contato conosco para informações, duvidas ou se deseja solicitar um orçamento.
-                            </p>
-                        </td>
-                        <td>
-                            <form class="formulary-input">
-                                <div>
-                                    <h2>Fale Conosco</h2>
-                                </div>
-                                <div><input type="text" placeholder="Digite seu nome..."></div>
-                                <div><input type="text" placeholder="Digite seu Email..."></div>
-                                <div><input type="text" placeholder="Digite seu telefone..."></div>
-                                <div><input class="formulary-input-textbox" type="text"
-                                        placeholder="Escreva para nós..."></div>
-                                <div><button class="formulary-input-button">Enviar</button></div>
-                            </form>
-                        </td>
-                    </tr>
-                </table>
+                <article>
+                    <h2>Contatos</h2>
+                    <p>Entre em contato conosco para informações, duvidas ou se deseja solicitar um orçamento.
+                    </p>
+                </article>
+                <form class="formulary-input" action="/send-form">
+                    <div>
+                        <h2>Fale Conosco</h2>
+                    </div>
+                    <!-- AJUSTAR TIPO EMAIL E FONE E DESCRIÇÃO BOTAO SUBIMT -->
+                    <input type="text" id="name" placeholder="Digite seu nome..."><br>
+                    <input type="email" id="email" placeholder="Digite seu Email..."><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone..."><br>
+                    <textarea class="formulary-input-textbox" id="description"
+                        placeholder="Escreva para nós..."></textarea><br>
+                    <button type="submit" class="formulary-input-button">Enviar</button>
+                </form>
             </section>
         </div>
     </main>
     <footer>
         <!-- Rodapé com uma lista de contatos -->
         <section class="contacts">
-            <div>
-                <h2>51 3044-2222</h2>
-                <h2>51 3044-2223</h2>
-                <h2>harry.potter@hogwarts.com</h2>
-                <table>
-                    <tr>
-                        <td><img src="image/icons/facebook.png" alt="facebook"></td>
-                        <td><img src="image/icons/linkedin.png" alt="linkedin"></td>
-                    </tr>
-                </table>
-            </div>
+            <ul>
+                <li>
+                    <h2>51 3044-2222</h2>
+                </li>
+                <li>
+                    <h2>51 3044-2223</h2>
+                </li>
+                <li>
+                    <h2>contato@arysolution.com</h2>
+                </li>
+            </ul>
+            <figure>
+                <img src="image/icons/facebook.png" alt="facebook">
+                <img src="image/icons/linkedin.png" alt="linkedin">
+            </figure>
         </section>
     </footer>
 </body>

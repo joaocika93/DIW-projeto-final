@@ -44,16 +44,17 @@ main{
 .nav-menu{
     width: 100%;
     height: 50px;
+    font-size: x-large;
 }
 
-.nav-menu nav ul {
+.nav-menu ul {
     list-style: none;
     width: 1800px;
     height: 50px;
     margin-top: 4px;
 }
 
-.nav-menu nav li {
+.nav-menu li {
     position: relative;
     float: left;
     width: 350px;
@@ -64,50 +65,56 @@ main{
     text-align: center;
 }
 
-.nav-menu nav li a {
+.nav-menu li a {
     display: inline-block;
     /* visual do link */
     color: darkred;
     text-decoration: none;
-    margin-top: 16px;
+    margin-top: 12px;
     
 }
 
  /* Seção Quem Somos? */
 
-.whoweare table {
-    width: 100%;
-    height: 500px;
-    padding-left: 95px;
-    margin-top: 20px;
+.whoweare {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
 }
 
-.whoweare table tr td{
-    width: 50%;
+.whoweare article{
+    width: 45%;
+    padding-left: 50px;
+    padding-top: 100px;
 }
 
-.whoweare table article h2 {
+.whoweare article h2 {
     color: darkred;
     font-size: xx-large;
 }
 
-.whoweare table article p {
+.whoweare article p {
     text-align: justify;
     color: darkred;
     font-size: x-large;
 }
 
-.whoweare1 td img {
+.whoweare-figure{
+    margin-left:50px;
+}
+
+.whoweare-figure img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
 }
 
-.whoweare2 td img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    margin-left: 30%;
+.figure-1{
+    margin-bottom: 100px;
+}
+
+.figure-2{
+    margin-left: 50px;
 }
 
 /* Etapas de Desenvolvimento */
@@ -120,6 +127,7 @@ main{
     color: darkred;
     text-align: center;
     padding-bottom: 20px;
+    font-size: xx-large;
 }
 
 .developmentsteps button {
@@ -128,23 +136,19 @@ main{
     outline: none;
 }
 
-.developmentsteps table {
-    width: 100%;
-}
-
-.developmentsteps table tr td {
-    color: darkred;
-    width: 20px;
-    font-size: large;
-}
-
-.developmentsteps table tr td img {
-    width: 200px;
-    margin-left: 80%;
-}
-
 .step {
     display: none;
+}
+
+.step div{
+    display: flex;
+    flex-direction: row;
+    color: darkred;
+    font-size: x-large;
+}
+
+.step figure img{
+    width: 200px;
 }
 
 .tab-button {
@@ -154,53 +158,69 @@ main{
     background-color: white;
     color: darkred;
     font-style: italic;
+    font-size: large;
 }
 
 /* Seção Serviços */
 
-.services {
+.services{
     margin-top: 150px;
-    height: 750px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
 }
 
-.services td{
-    padding: 40px;
-}
-
-.services-table-one table{
-    border-spacing: 0px;
-}
-
-.services-table-one tr td {
+.services-left{
+    width: 70%;
+    height: 700px;
     background-color: darkred;
     color: white;
-    text-align: center;
-}
-
-.services-table-one tr td p {
-    text-align: left;
     font-size: x-large;
 }
 
-.services-table-two tr td p {
-    text-align: justify;
-    font-size: medium;
+.services-left article{
+    padding: 20px;
+}
+
+.services-center{
+    margin-left: 100px;
+    width: 70%;
+    height: 700px;
+    background-color: white;
     color: darkred;
+    font-size: x-large;
 }
 
-.services-table-two tr td img {
-    width: 80px;
+.services-center figure{
+    padding: 50px;
 }
 
-.services-table-three tr td p {
-    text-align: justify;
-    font-size: medium;
+.services-center img{
+    width: 100px;
+    margin-left: 35px;
+}
+
+.services-right{
+    margin-left: 100px;
+    width: 70%;
+    height: 700px;
+    background-color: white;
     color: darkred;
+    font-size: x-large;
 }
 
-.services-table-three tr td img {
-    width:100px;
+
+.services-right figure{
+    padding: 50px;
+    margin-left: 70px;
+    margin-top: -25px;
+}
+
+.services-right img{
+    width: 150px;
+}
+
+.services-js{
+    margin-top: 60px;
 }
 
 /* Seção Equipe */
@@ -209,62 +229,90 @@ main{
     background-color: darkred;
     color: white;
     margin-top: 250px;
-    height: 600px;
-}
-
-.team table {
-    width: 100%;
-    height: 600px;
-}
-
-.team-icon td {
+    padding-top: 50px;
+    height: 800px;
     text-align: center;
+    font-size: large;
 }
 
-.team-icon td img {
+
+.team-top{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+}
+
+.team-top article{
+    padding: 50px;
+    width: 300px;
+}
+
+.team-top img{
     width: 100px;
 }
 
-.team-title td {
-    text-align: center;
+.team-bottom{
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+}
+
+.team-bottom article{
+    padding: 50px;
+    width: 300px;
+}
+
+.team-bottom img{
+    width: 100px;
 }
 
 /* Seção Formulario */
 
 .formulary {
+    display: flex;
+    flex-direction: row;
     color: darkred;
+    margin-top: 100px;
 }
 
-
-.formulary table tr td form {
-    margin-top: 150px;
-    margin-left: 500px;
+.formulary article{
+    margin-top: 250px;
     width: 500px;
-    height: 600px;
-    border: 1px solid darkred;
-    text-align: center;
-    font-size: large;
-    background-color: white;
+    font-size: x-large;
 }
 
-.formulary-input div input {
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 20px;
+.formulary-input{
+    text-align: center;
+    font-size: x-large;
+    border: 1px solid darkred;
+    background-color: white;
+    padding: 20px;
+    width: 450px;
+    margin-left: 350px;
+    margin-top: 100px;
+    
+}
+
+.formulary-input input{
+    width: 350px;
+    padding: 20px;
+    margin-top: 25px;
     outline: none;
     border: 1px solid darkred;
 }
 
-.formulary-input-textbox {
-    height: 200px;
-    word-wrap: break-word;
+.formulary-input-textbox{
+    width: 350px;
+    padding: 20px;
+    margin-top: 25px;
+    height: 100px;
+    outline: none;
+    border: 1px solid darkred;
 }
 
-.formulary-input-button {
+.formulary-input-button{
     background-color: darkred;
-    border: none;
+    border: 1px solid darkred;
     border-radius: 20px;
     color: white;
     padding: 15px 32px;
@@ -272,18 +320,13 @@ main{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-top: 10%;
-}
-
-.formulary-title {
-    font-size: x-large;
-    width: 500px;
+    margin-top:30px;
 }
 
 /* Rodapé */
 
 footer{
-    margin-top: 3400px;
+    margin-top: 3600px;
     width: 100%;
     background-color: darkred;
 }
@@ -291,14 +334,21 @@ footer{
 footer .contacts {
     color: white;
     font-size: x-large;
+    padding: 50px;
 }
 
-.contacts div {
-    padding-top: 20px;
+.contacts ul {
     margin-left: 200px;
+    list-style: none;
 }
 
-.contacts div table tr td img {
+.contacts figure {
+   display: flex;
+   flex-direction: row;
+   margin-left: 230px;
+}
+
+.contacts figure img{
     width: 50px;
-    margin-bottom: 50px;
+    padding: 5px;
 }
